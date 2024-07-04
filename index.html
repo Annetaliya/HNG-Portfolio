@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Dancing+Script:wght@500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+    <title>Display Current UTC Time</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="heroImg">
+            <figure>
+                <img id='slack-profile-picture' data-testid="slackProfilePicture"="./Images/slack profile.png" alt="Slack Profile Picture">
+            </figure>
+            <div class="email" id="slack-email" data-testid="slackEmail">annetaliya@gmail.com</div>
+        </div>
+        
+        <ul class="intro-hero">
+           
+            <li class="hideOnMobile"><a href="#home">HOME</a></li>
+            <li class="hideOnMobile"><a href="#about">ABOUT</a></li>
+            <li class="hideOnMobile"><a href="#contact">CONTACT</a></li>
+            <li class="menu" onclick=showSideBar()> <img src="./Images/burger-bar.png" alt="menu" width='40px'></li>
+        </ul>
+       
+        <ul class="intro-hero sidebar" id="sidebar">
+            <li onClick=hideSideBar()> <img src="./Images/close.png" alt="close" width="20px"></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
+    </header>
+    <main class="container">
+        <section id="about">
+            <p class="name">Slack Name: Annette Adhiambo</p>
+            <div  class='time' id="current-time" data-testid="slackDisplayName"> </div>
+            <div class="time" id="slack-email" data-testid="currentDay">annetaliya@gmail.com</div>
+            <p class="second-intro">Hello My name is Annette <br> <span class="subIntro">A Frontend Developer</span> </p>
+            
+        </section>
+        <section id="home" class="home">
+            <h1 ><span class="homeIntro">My Frontend Goals</span></h1>
+            <div class="goalsContainer">
+                <div class="goalsImg">
+                    <img src="./Images/goals.jpg" alt="goals">
+                </div>
+                <div class="goals">
+                    <h3>Master core Frontend Technologies</h3>
+                    <p>I aim to deepen my Javascript knowledge 
+                    and get familiar with advanced <br>javascript topics such as E6+ and asynchronous operations.</br>
+                    </p>
+                    <h3>Learn a modern frontend framework</h3>
+                    <p>Pick one or more frameworks to learn such as React
+                     <br>Vue or Angular.</br>
+                    </p>
+                    <h3>Understand User Experience </h3>
+                    <p>Understand the basics of UX designing in order to better
+                     <br>collaborate with designers and improve user experience.</br>
+                    </p>
+                    <h3>Expand Backend knowledge </h3>
+                    <p>Gain a basic understanding of backend technologies such as Node.js, Express,
+                     <br> or databases like MongoDB and SQL.</br>
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <section id="contact" class="contact">
+            <h2>Link to external resources</h2>
+            <div class="links">
+                <a id="hng-link" data-testid="hngLink" href="https://hng.tech/learn">Learn with HNG</a>
+                <a  data-testid="keywordLink" href="https://keyword.dog">keyword</a>
+                <a  data-testid="scrapeanywebLink" href="https://scrapeanyweb.site">scrapeanyweb</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footerBottom">
+        <div>
+            <p class="footer">&copy <span id="currentYear"></span> All Rights Reserved</p>
+        </div>
+        
+    </footer>
+    <script src="./test.js">
+
+    </script>
+    
+</body>
+</html>
